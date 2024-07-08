@@ -1,14 +1,17 @@
-import "bulma/css/bulma.css"
+//import "bulma/css/bulma.css"
+import "./App.css"
 import React from "react"
-import ProfileCard from "./ProfileCard"
-import AlexaImage from "./images/alexa.png"
-import CortanaImage from "./images/cortana.png"
-import SiriImage from "./images/siri.png"
+// import ProfileCard from "./ProfileCard"
+// import AlexaImage from "./images/alexa.png"
+// import CortanaImage from "./images/cortana.png"
+// import SiriImage from "./images/siri.png"
+import AnimalShow from "./AnimalShow"
 
 function App() {
   return (
     <div>
-      <section className="hero is-primary">
+      <AnimalShow />
+      {/* <section className="hero is-primary">
         <div className="hero-body">
           <p className="title">Personal Digital Assistants</p>
         </div>
@@ -42,7 +45,7 @@ function App() {
             </div>
           </div>
         </section>
-      </div>
+      </div> */}
     </div>
   )
 }
