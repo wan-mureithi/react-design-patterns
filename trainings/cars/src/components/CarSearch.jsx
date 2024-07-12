@@ -3,9 +3,10 @@ import { changeSearchTerms } from "../store"
 import { useDispatch, useSelector } from "react-redux"
 
 function CarSearch() {
+  const dispatch = useDispatch()
   const searchTerm = useSelector((state) => state.cars.searchTerm)
   const handleSearchTermChange = (e) => {
-    dispatchEvent(changeSearchTerms(e.target.value))
+    dispatch(changeSearchTerms(e.target.value))
   }
   return (
     <div className="list-header">
